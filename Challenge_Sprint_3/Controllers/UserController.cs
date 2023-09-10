@@ -57,7 +57,7 @@ namespace Challenge_Sprint_3.Controllers
 
             if (user.VerifiedAt == null) 
             {
-                return BadRequest("Não verificado");
+                return BadRequest($"Ola, {user.Name}. Não verificado");
             }
 
             return Ok($"Ola, {user.Name}!");
